@@ -109,6 +109,14 @@ header nav ul a {
     transition: color 0.25s ease-out;
 }
 
+.contacts-page .header-image {
+    width: 800px;
+    height: 153px;
+    background: transparent url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.shell.us%2Fabout-us%2Fprojects-and-locations%2Fnorco-manufacturing-complex%2Fcontact-shell-norco%2F_jcr_content%2FpagePromo%2Fimage.img.960.jpeg%2F1497972562995%2Fgs-contact-image-contact-us-1900x1200.jpeg&f=1') no-repeat;
+    background-size: cover;
+    background-position: 0 -120px;
+}
+
 a:hover {
     color: #DE372C;
 }
@@ -285,4 +293,49 @@ footer nav a {
     color: white;
     text-decoration: none;
     transition: color 1s ease-out;
+}
+
+@media screen and ( max-width: 800px ) {
+    .container {
+        margin: 0 10px;
+        min-width: 300px;
+        width: auto;
+    }
+
+    .contacts-page .header-image {
+        min-width: 300px;
+        width: auto;
+        background-size: 100% auto;
+        background-position: center center;
+    }
+
+    header img { width: 100%; }
+
+    header nav ul {
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+
+    header nav li:first-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav li:nth-child(n+2) {
+        margin: 20px 0;
+    }
+
+    nav li a img { width: auto; }
+
+    .about-page main {
+        flex-direction: column;
+    }
+
+    .about-page main div { width: 100%; }
+
+    .about-page main img{
+        width: 100%;
+    }
+
+    footer nav ul { width: 100%; }
 }
