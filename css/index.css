@@ -190,6 +190,60 @@ a:hover {
     border-radius: 6px;
 }
 
+form {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px dashed #000;
+}
+
+.contacts-page form { margin-bottom: 40px; }
+
+form .input-container {
+    width: 33.3%;
+}
+
+form label {
+    margin-bottom: 6px;
+    display: block;
+}
+
+form input {
+    width: 90%;
+    padding: 4px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+form .textarea-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+form textarea {
+    width: 100%;
+    min-height: 10em;
+    padding: 4px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+form button {
+    margin: 20px 0 20px auto;
+    padding: 4px 20px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 4px;
+    transition: border-color 0.5s, background-color 0.5s;
+}
+
+form button:hover {
+    background-color: #DE372C;
+    border-color: #DE372C;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
