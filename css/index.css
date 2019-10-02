@@ -95,7 +95,8 @@ header nav ul li {
     font-size: 0.75em;
 }
 
-header nav ul li.current {
+nav li.current {
+    text-decoration: underline;
     font-weight: bold;
 }
 
@@ -106,6 +107,14 @@ header nav ul a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.25s ease-out;
+}
+
+.contacts-page .header-image {
+    width: 800px;
+    height: 153px;
+    background: transparent url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.shell.us%2Fabout-us%2Fprojects-and-locations%2Fnorco-manufacturing-complex%2Fcontact-shell-norco%2F_jcr_content%2FpagePromo%2Fimage.img.960.jpeg%2F1497972562995%2Fgs-contact-image-contact-us-1900x1200.jpeg&f=1') no-repeat;
+    background-size: cover;
+    background-position: 0 -120px;
 }
 
 a:hover {
@@ -187,6 +196,66 @@ a:hover {
     display: inline-block;
     border: 2px solid #000;
     border-radius: 6px;
+    transition: border-color 0.5s, color 0.5s;
+}
+
+.about-page main div a:hover {
+    border-color:#DE372C;
+    color: #DE372C;
+}
+
+form {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px dashed #000;
+}
+
+.contacts-page form { margin-bottom: 40px; }
+
+form .input-container {
+    width: 33.3%;
+}
+
+form label {
+    margin-bottom: 6px;
+    display: block;
+}
+
+form input {
+    width: 90%;
+    padding: 4px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+form .textarea-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+form textarea {
+    width: 100%;
+    min-height: 10em;
+    padding: 4px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+form button {
+    margin: 20px 0 20px auto;
+    padding: 4px 20px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 4px;
+    transition: border-color 0.5s, background-color 0.5s;
+}
+
+form button:hover {
+    background-color: #DE372C;
+    border-color: #DE372C;
 }
 
 .bottom-content {
@@ -211,6 +280,9 @@ footer {
 }
 
 footer nav {
+}
+
+footer nav ul {
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -219,8 +291,74 @@ footer nav {
     font-size: 14px;
 }
 
+footer nav li {
+    color: #fff;
+}
+
 footer nav a {
     color: white;
     text-decoration: none;
     transition: color 1s ease-out;
+}
+
+@media screen and ( max-width: 800px ) {
+    .container {
+        margin: 0 10px;
+        min-width: 300px;
+        width: auto;
+    }
+
+    .contacts-page .header-image {
+        min-width: 300px;
+        width: auto;
+        background-size: 100% auto;
+        background-position: center center;
+    }
+
+    header img { width: 100%; }
+
+    header nav ul {
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+
+    header nav li:first-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav li:nth-child(n+2) {
+        margin: 20px 0;
+    }
+
+    nav li a img { width: auto; }
+
+    .about-page main {
+        flex-direction: column;
+    }
+
+    .about-page main div { width: 100%; }
+
+    .about-page main img{
+        width: 100%;
+    }
+
+    form .input-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    form input {
+        width: 100%;
+        height: 30px;
+    }
+
+    form .textarea-container { margin-top: 0; }
+
+    form button {
+        width: 100%;
+        height: 50px;
+    }
+
+    footer nav ul { width: 100%; }
 }
